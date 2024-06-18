@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect, ReactNode } from 'react';
+import { createContext, useState } from 'react';
 import { theme as lightTheme, darkTheme } from '../stitches.config';
 import { Theme, ThemeContextValue, ThemeProviderProps } from './types';
 

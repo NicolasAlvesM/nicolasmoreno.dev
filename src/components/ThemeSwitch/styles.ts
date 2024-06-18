@@ -1,6 +1,6 @@
 import { styled } from '../../stitches.config';
 import * as SwitchPrimitive from '@radix-ui/react-switch';
-import { BsFillMoonFill, BsFillSunFill, BsMoon } from '../../styles/icons';
+import { BsFillMoonFill, BsFillSunFill } from '../../styles/icons';
 
 const StyledSwitch = styled(SwitchPrimitive.Root, {
     all: 'unset',

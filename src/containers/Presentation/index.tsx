@@ -20,7 +20,7 @@ import moment from 'moment';
 import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import { MdMailOutline } from "react-icons/md";
 
-import img from '../../assets/img/profile-pic.jpg';
+import img from '../../assets/img/profile-pic.webp';
 
 import cv from '../../assets/pdf/Nicolas_Moreno_A._Medeiros.pdf';
 

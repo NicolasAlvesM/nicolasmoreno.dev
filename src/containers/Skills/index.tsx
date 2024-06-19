@@ -49,8 +49,8 @@ export default function Skills() {
                         <SkillItem>
                             <BsCheck2Circle size={20} />
                             <div>
-                                <strong>Docker</strong>
-                                <span>Intermediário</span>
+                                <strong>NoSQL</strong>
+                                <span>Avançado</span>
                             </div>
                         </SkillItem>
                     </SkillsList>
@@ -93,11 +93,25 @@ export default function Skills() {
                                 <span>Intermediário</span>
                             </div>
                         </SkillItem>
+                        <SkillItem>
+                            <BsCheck2Circle size={20} />
+                            <div>
+                                <strong>Cypress</strong>
+                                <span>Intermediário</span>
+                            </div>
+                        </SkillItem>
                     </SkillsList>
                 </SkillsArea>
                 <SkillsArea>
                     <SkillAreaTitle>DevOps</SkillAreaTitle>
                     <SkillsList>
+                        <SkillItem>
+                            <BsCheck2Circle size={20} />
+                            <div>
+                                <strong>Docker</strong>
+                                <span>Avançado</span>
+                            </div>
+                        </SkillItem>
                         <SkillItem>
                             <BsCheck2Circle size={20} />
                             <div>

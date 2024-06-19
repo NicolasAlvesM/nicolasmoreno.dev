@@ -9,6 +9,7 @@ export function ThemeSwitch() {
 
     return (
         <StyledSwitch
+            id="theme" aria-label="Theme"
             onCheckedChange={onCheckedChange}
             defaultChecked={getPreferredTheme() === 'dark' ? true : false}>
             <StyledThumb>{theme === 'dark' ? <StyledSunIcon /> : <StyledMoonIcon />}</StyledThumb>

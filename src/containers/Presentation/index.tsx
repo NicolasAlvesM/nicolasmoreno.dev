@@ -50,10 +50,10 @@ export function Presentation() {
                         Download CV
                         <StyledDownloadIcon size={20} />
                     </DownloadButton>
-                    <Button onClick={() => { window.open('https://wa.me/05531983634531', '_blank') }} outlined>
+                    <Button id="whatsapp" aria-label="Whatsapp" onClick={() => { window.open('https://wa.me/05531983634531', '_blank') }} outlined>
                         <FaWhatsapp size={24} />
                     </Button>
-                    <Button onClick={() => { window.open('mailto:contato@nicolasmoreno.dev', '_blank') }} outlined>
+                    <Button id="mail" aria-label="Mail" onClick={() => { window.open('mailto:contato@nicolasmoreno.dev', '_blank') }} outlined>
                         <MdMailOutline size={24} />
                     </Button>
                 </ButtonsWrapper>

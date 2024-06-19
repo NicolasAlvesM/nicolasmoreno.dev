@@ -14,12 +14,12 @@ export const { styled, globalCss, theme } = createStitches({
             bold: 600,
         },
         colors: {
-            primary: '#2176ff',
+            primary: '#003DBD',
             hiContrast: '#121214',
             hiContrast2: '#29292e',
             loContrast: '#E6E6E6',
             loContrast2: '#AEAEAE',
-            gray: '#777777',
+            gray: '#4A4A4A',
         },
     },
     media: {
@@ -30,10 +30,11 @@ export const { styled, globalCss, theme } = createStitches({
 
 export const darkTheme = createTheme({
     colors: {
+        primary: '#669CFF',
         hiContrast: '#E6E6E6',
         hiContrast2: '#AEAEAE',
         loContrast: '#121214',
         loContrast2: '#29292e',
-        gray: '#777777',
+        gray: '#A1A1A1',
     },
 });

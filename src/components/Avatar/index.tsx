@@ -7,7 +7,7 @@ interface AvatarProps {
     fallbackDelay?: number;
 }
 
-export function Avatar({ image, alt, fallback, fallbackDelay = 500 }: AvatarProps) {
+export default function Avatar({ image, alt, fallback, fallbackDelay = 500 }: AvatarProps) {
     return (
         <StyledAvatar>
             <StyledImage src={image} alt={alt} />

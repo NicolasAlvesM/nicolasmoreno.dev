@@ -1,3 +1,4 @@
+import { lazy, useEffect, useState } from 'react';
 import {
     AvatarWrapper,
     ButtonsWrapper,
@@ -10,7 +11,9 @@ import {
     Welcome,
     Wrapper,
 } from './styles';
-import { Avatar, Button, DownloadButton } from '../../components';
+const Avatar = lazy(() => import('../../components/Avatar'));
+const Button = lazy(() => import('../../components/Button'));
+const DownloadButton = lazy(() => import('../../components/DownloadButton'));
 
 import moment from 'moment';
 
@@ -20,9 +23,8 @@ import { MdMailOutline } from "react-icons/md";
 import img from '../../assets/img/profile-pic.jpg';
 
 import cv from '../../assets/pdf/Nicolas_Moreno_A._Medeiros.pdf';
-import { useEffect, useState } from 'react';
 
-export function Presentation() {
+export default function Presentation() {
     const [age, setAge] = useState(0);
 
     useEffect(() => {

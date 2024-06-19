@@ -6,6 +6,6 @@ interface DownloadButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
     outlined?: boolean;
 }
 
-export function DownloadButton({ children, ...props }: DownloadButtonProps) {
+export default function DownloadButton({ children, ...props }: DownloadButtonProps) {
     return <StyledDownloadButton {...props}>{children}</StyledDownloadButton>;
 }

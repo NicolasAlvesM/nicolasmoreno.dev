@@ -1,9 +1,8 @@
-import { useEffect, useContext } from 'react';
+import { useEffect, useContext, lazy } from 'react';
 
 import { ThemeContext } from './context/ThemeContext';
 import { Theme } from './context/types';
-import { Home } from './pages';
-
+const Home = lazy(() => import('./pages/home'));
 import globalStyles from './styles/global';
 
 function App() {

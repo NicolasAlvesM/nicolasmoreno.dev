@@ -1,9 +1,10 @@
-import { ContainerTitle } from '../../components';
+import { lazy } from 'react';
+const ContainerTitle = lazy(() => import('../../components/ContainerTitle'));
 import { Container, Head, QualificationItem, QualificationWrapper, Wrapper } from './styles';
 
 import { BiBriefcase, BiBookBookmark, BiCalendarAlt } from 'react-icons/bi';
 
-export function Qualifications() {
+export default function Qualifications() {
     return (
         <Container>
             <ContainerTitle>Qualificações</ContainerTitle>

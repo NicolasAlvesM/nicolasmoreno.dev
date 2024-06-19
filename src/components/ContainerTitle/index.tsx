@@ -5,6 +5,6 @@ interface ContainerTitleProps {
     children: ReactNode;
 }
 
-export function ContainerTitle({ children }: ContainerTitleProps) {
+export default function ContainerTitle({ children }: ContainerTitleProps) {
     return <Title>{children}</Title>;
 }

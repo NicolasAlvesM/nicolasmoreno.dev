@@ -1,7 +1,8 @@
+import { lazy } from 'react';
 import { Container, Content } from './styles';
-import { ThemeSwitch } from '../../components';
+const ThemeSwitch = lazy(() => import('../../components/ThemeSwitch'));
 
-export function Header() {
+export default function Header() {
     return (
         <Container>
             <Content>

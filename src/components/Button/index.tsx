@@ -6,7 +6,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     outlined?: boolean;
 }
 
-export function Button({ children, ...props }: ButtonProps) {
+export default function Button({ children, ...props }: ButtonProps) {
     return (
         <StyledButton {...props} type="button">
             {children}

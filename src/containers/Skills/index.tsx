@@ -1,8 +1,9 @@
+import { lazy } from 'react';
 import { BsCheck2Circle } from 'react-icons/bs';
-import { ContainerTitle } from '../../components';
+const ContainerTitle = lazy(() => import('../../components/ContainerTitle'));
 import { Container, SkillAreaTitle, SkillItem, SkillsArea, SkillsList, Wrapper } from './styles';
 
-export function Skills() {
+export default function Skills() {
     return (
         <Container>
             <ContainerTitle>Habilidades</ContainerTitle>

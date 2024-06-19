@@ -1,0 +1,1 @@
+import{s as e,j as r}from"./index-C-PWaNx6.js";const o=e("h2",{color:"$primary",fontSize:"1.75rem",marginBottom:"1.5rem",width:"100%","@sm":{textAlign:"center"}});function n({children:t}){return r.jsx(o,{children:t})}export{n as default};

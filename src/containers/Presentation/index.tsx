@@ -14,7 +14,8 @@ import { Avatar, Button, DownloadButton } from '../../components';
 
 import moment from 'moment';
 
-import { FaLinkedin, FaGithub, FaWhatsapp, FaMailBulk } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
+import { MdMailOutline } from "react-icons/md";
 
 import img from '../../assets/img/profile-pic.jpg';
 
@@ -53,7 +54,7 @@ export function Presentation() {
                         <FaWhatsapp size={24} />
                     </Button>
                     <Button onClick={() => { window.open('mailto:contato@nicolasmoreno.dev', '_blank') }} outlined>
-                        <FaMailBulk size={24} />
+                        <MdMailOutline size={24} />
                     </Button>
                 </ButtonsWrapper>
             </Wrapper>

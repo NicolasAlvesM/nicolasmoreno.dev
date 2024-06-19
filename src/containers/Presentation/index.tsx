@@ -46,7 +46,7 @@ export default function Presentation() {
                 <Title>
                     <br /> Meu nome é <span>Nicolas&nbsp;Moreno</span>
                 </Title>
-                <Role>Desenvolvedor Web</Role>
+                <Role>Fullstack Developer</Role>
                 <ButtonsWrapper>
                     <DownloadButton href={cv} download="CV - Nicolas Moreno">
                         Download CV

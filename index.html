@@ -2,24 +2,653 @@
 <html lang="pt-BR">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/ico" href="/src/assets/img/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap"
-        as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap"
-            rel="stylesheet">
-    </noscript>
-    <title>Nicolas Moreno Fullstack Developer</title>
-    <meta name="description" content="Portifolio Nicolas Moreno Fullstack Developer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/ico" href="public/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <title>Nicolas Moreno Desenvolvedor Fullstack</title>
+  <meta name="description" content="Nicolas Moreno Desenvolvedor Fullstack">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nicolas Moreno",
+      "givenName": "Nicolas",
+      "familyName": "Moreno",
+      "jobTitle": "Desenvolvedor Fullstack",
+      "url": "https://nicolasmoreno.dev",
+      "description": "Nicolas Moreno Desenvolvedor Fullstack",
+      "image": "https://nicolasmoreno.dev/public/profile.webp",
+      "sameAs": [
+        "https://www.linkedin.com/in/nicolasmorenoalves/",
+        "https://github.com/NicolasAlvesM"
+      ],
+      "email": "contato@nicolasmoreno.dev",
+      "telephone": "+5531983634531",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Contagem",
+        "addressRegion": "MG",
+        "addressCountry": "BR"
+      },
+      "knowsAbout": [
+        "Golang", "NestJS", "NodeJS", "Typescript", "SQL", "NoSQL",
+        "HTML", "CSS", "Javascript", "ReactJS", "React Native", "Cypress",
+        "Docker", "CI/CD", "Github Actions", "Jenkins", "Microserviços", "Cloud"
+      ],
+      "skills": [
+        "Golang", "NestJS", "NodeJS", "TypeScript", "SQL", "NoSQL",
+        "HTML", "CSS", "JavaScript", "ReactJS", "React Native", "Cypress",
+        "Docker", "CI/CD", "GitHub Actions", "Jenkins", "Microserviços", "Cloud"
+      ],
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Desenvolvedor Fullstack Pleno",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "MagaluPay - Credito Express"
+          },
+          "startDate": "2024-10"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Desenvolvedor Fullstack Pleno",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Vcodes"
+          },
+          "startDate": "2023-10",
+          "endDate": "2024-10"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Desenvolvedor Fullstack Pleno",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Planetfone"
+          },
+          "startDate": "2023-03",
+          "endDate": "2023-09"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Desenvolvedor Fullstack",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Planetfone"
+          },
+          "startDate": "2022-09",
+          "endDate": "2023-02"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Desenvolvedor Fullstack",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Chammas Engenharia"
+          },
+          "startDate": "2020-12",
+          "endDate": "2021-12"
+        }
+      ],
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Centro Universitário Una (Una Contagem)",
+          "degree": "Bacharelado em Sistemas de Informação",
+          "startDate": "2019-08"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Instituo Federal de Educação, Ciência e Tecnologia de Minas Gerais (IFMG)",
+          "degree": "Técnico em Automação Industrial",
+          "startDate": "2015-02",
+          "endDate": "2018-12"
+        }
+      ],
+      "education": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Bacharelado em Sistemas de Informação",
+          "educationalLevel": "BachelorDegree",
+          "institution": {
+            "@type": "CollegeOrUniversity",
+            "name": "Centro Universitário Una (Una Contagem)"
+          },
+          "startDate": "2019-08"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Técnico em Automação Industrial",
+          "educationalLevel": "VocationalCredential",
+          "institution": {
+            "@type": "CollegeOrUniversity",
+            "name": "Instituo Federal de Educação, Ciência e Tecnologia de Minas Gerais (IFMG)"
+          },
+          "startDate": "2015-02",
+          "endDate": "2018-12"
+        }
+      ]
+    }
+  </script>
 </head>
 
 <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <header>
+    <div class="header-container">
+      <h2>&lt;Nicolas Moreno/&gt;</h2>
+      <button id="theme-toggle" aria-label="Theme">
+        <span class="theme-toggle-thumb">
+          <svg id="moon-icon" class="theme-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path
+              d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+          </svg>
+          <svg id="sun-icon" class="theme-icon" viewBox="0 0 16 16" fill="currentColor">
+            <path
+              d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <span class="greeting">👏 Olá, seja bem vind@!</span>
+        <h1>Meu nome é <span>Nicolas Moreno</span></h1>
+        <span class="role">Desenvolvedor Fullstack</span>
+        <div class="hero-buttons">
+          <a href="Nicolas_Moreno_A._Medeiros.pdf" download="CV - Nicolas Moreno" class="button">
+            Download CV
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+          <a target="_blank" href="https://wa.me/05531983634531" id="whatsapp" aria-label="Whatsapp"
+            class="icon-button outlined">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="24" width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+              </path>
+            </svg>
+          </a>
+          <a target="_blank" href="mailto:contato@nicolasmoreno.dev" id="mail" aria-label="Mail"
+            class="icon-button outlined">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24" width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-profile">
+        <div class="avatar">
+          <img src="public/profile.webp" alt="imagem de Nicolas Moreno">
+        </div>
+        <div class="profile-info">
+          <span><strong>Idade:</strong> <span id="age">25</span> anos</span>
+          <span><strong>Localidade:</strong> Contagem/MG</span>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/nicolasmorenoalves/" target="_blank" title="LinkedIn">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="32" width="32"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://github.com/NicolasAlvesM" target="_blank" title="GitHub">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="32" width="32"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="skills-container">
+        <article class="skills-category">
+          <h3>Backend</h3>
+          <ul class="skills-list">
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>Golang</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>NestJS</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>NodeJS</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>Typescript</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>SQL</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>NoSQL</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="skills-category">
+          <h3>Frontend</h3>
+          <ul class="skills-list">
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>HTML</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>CSS</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>Javascript</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>ReactJS</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>React Native</strong>
+                <span>Intermediário</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>Cypress</strong>
+                <span>Intermediário</span>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="skills-category">
+          <h3>DevOps</h3>
+          <ul class="skills-list">
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>Docker</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>CI/CD</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>Github Actions</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>Jenkins</strong>
+                <span>Intermediário</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>Microserviços</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+            <li>
+              <svg class="check-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z">
+                </path>
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z">
+                </path>
+              </svg>
+              <div>
+                <strong>Cloud</strong>
+                <span>Avançado</span>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Qualifications Section -->
+    <section class="qualifications">
+      <h2 class="section-title">Qualificações</h2>
+
+      <article class="qualification-category">
+        <div class="qualification-header">
+          <svg class="qualification-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+            height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 6h-3V4c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2zm-5-2v2H9V4h6zM8 8h12v3H4V8h4zM4 19v-6h6v2h4v-2h6l.001 6H4z">
+            </path>
+          </svg>
+          <h3>Experiências</h3>
+        </div>
+
+        <div class="qualification-item">
+          <strong>Desenvolvedor Fullstack Pleno - MagaluPay</strong>
+          <div class="qualification-details">
+            <span>Credito Express</span>
+            <span>
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="calendar-icon">
+                <path
+                  d="M3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7v2H5a2 2 0 0 0-2 2zm16 14H5V8h14z" />
+              </svg>
+              Out 2024 - Atual
+            </span>
+          </div>
+        </div>
+
+        <div class="qualification-item">
+          <strong>Desenvolvedor Fullstack Pleno</strong>
+          <div class="qualification-details">
+            <span>Vcodes</span>
+            <span>
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="calendar-icon">
+                <path
+                  d="M3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7v2H5a2 2 0 0 0-2 2zm16 14H5V8h14z" />
+              </svg>
+              Out 2023 - Out 2024
+            </span>
+          </div>
+        </div>
+
+        <div class="qualification-item">
+          <strong>Desenvolvedor Fullstack Pleno</strong>
+          <div class="qualification-details">
+            <span>Planetfone</span>
+            <span>
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="calendar-icon">
+                <path
+                  d="M3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7v2H5a2 2 0 0 0-2 2zm16 14H5V8h14z" />
+              </svg>
+              Mar 2023 - Set 2023
+            </span>
+          </div>
+        </div>
+
+        <div class="qualification-item">
+          <strong>Desenvolvedor Fullstack</strong>
+          <div class="qualification-details">
+            <span>Planetfone</span>
+            <span>
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="calendar-icon">
+                <path
+                  d="M3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7v2H5a2 2 0 0 0-2 2zm16 14H5V8h14z" />
+              </svg>
+              Set 2022 - Fev 2023
+            </span>
+          </div>
+        </div>
+
+        <div class="qualification-item">
+          <strong>Desenvolvedor Fullstack</strong>
+          <div class="qualification-details">
+            <span>Chammas Engenharia</span>
+            <span>
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="calendar-icon">
+                <path
+                  d="M3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7v2H5a2 2 0 0 0-2 2zm16 14H5V8h14z" />
+              </svg>
+              Dez de 2020 - Dez de 2021
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="qualification-category">
+        <div class="qualification-header">
+          <svg class="qualification-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+            height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19 2.01H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3h15v-2H6.012C5.55 19.998 5 19.815 5 19.01c0-.101.009-.191.024-.273.112-.575.583-.717.987-.727H20c.018 0 .031-.009.049-.01H21V4.01c0-1.103-.897-2-2-2zm0 14H5v-11c0-.806.55-.988 1-1h7v7l2-1 2 1v-7h2v12z">
+            </path>
+          </svg>
+          <h3>Educação</h3>
+        </div>
+
+        <div class="qualification-item">
+          <strong>Bacharelado em Sistemas de Informação</strong>
+          <div class="qualification-details">
+            <span>Centro Universitário Una (Una Contagem)</span>
+            <span>
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="calendar-icon">
+                <path
+                  d="M3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7v2H5a2 2 0 0 0-2 2zm16 14H5V8h14z" />
+              </svg>
+              Ago 2019 -
+            </span>
+          </div>
+        </div>
+
+        <div class="qualification-item">
+          <strong>Técnico em Automação Industrial</strong>
+          <div class="qualification-details">
+            <span class="bachelor-degree">Instituo Federal de Educação, Ciência e Tecnologia de Minas Gerais
+              (IFMG)</span>
+            <span>
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="calendar-icon">
+                <path
+                  d="M3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7v2H5a2 2 0 0 0-2 2zm16 14H5V8h14z" />
+              </svg>
+              Fev 2015 - Dez 2018
+            </span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
